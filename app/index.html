@@ -27,6 +27,9 @@
       <h1>Angular</h1>
       <a href="#/">Home</a> | <a href="#/about">About</a>
       <div class="container" ng-view></div>
+
+      <div ng-include src="'templates/sidebar.html'"></div>
+
     </div>
 
     <!-- build:js scripts/vendor.js -->
@@ -43,6 +46,7 @@
     <script src="scripts/controllers/about_controller.js"></script>
     <script src="scripts/controllers/other_controller.js"></script>
     <script src="scripts/controllers/person_controller.js"></script>
+    <script src="scripts/controllers/sidebar_controller.js"></script>
     <!-- endbuild -->
 
   </body>
