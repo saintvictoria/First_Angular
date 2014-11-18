@@ -2,9 +2,9 @@
   
   angular.module('PeopleList')
   .controller('SingleController', 
-    ['$scope', '$routeParams', '$http', '$window', function ($scope, $routeParams, $http, $window) {
+    ['$scope', '$routeParams', '$http', 'appUrl', function ($scope, $routeParams, $http, appUrl) {
 
-      $http.get($window.url + $routeParams.pid).success( function (data) {
+      $http.get(appUrl + $routeParams.pid).success( function (data) {
         $scope.person = data;
       });
 

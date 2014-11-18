@@ -2,6 +2,10 @@
 
   angular.module('PeopleList', ['ngRoute'])
 
+  .constant ({
+    'appUrl': 'http://tiy-atl-fe-server.herokuapp.com/collections/ngpeople/'
+  })
+
   .config( function ($routeProvider) {
 
     $routeProvider.when('/', {
