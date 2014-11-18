@@ -6,12 +6,17 @@
 
     $routeProvider.when('/', {
       templateUrl: 'templates/list-template.html',
-      controller: 'PersonController'
+      controller: 'ListController'
     });
 
-    $routeProvider.when('/about', {
-      templateUrl: 'templates/about-template.html',
-      controller: 'AboutController'
+    $routeProvider.when('/add', {
+      templateUrl: 'templates/add-template.html',
+      controller: 'AddController'
+    });
+
+    $routeProvider.when('/single/:pid', {
+      templateUrl: 'templates/single-template.html',
+      controller: 'SingleController'
     });
 
     $routeProvider.otherwise({

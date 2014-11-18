@@ -1,6 +1,5 @@
 <div class="something">
-  <p ng-repeat="p in people">
-    {{ $index + 1 }} - Hi, my name is {{ p.name }} and I am {{ p.age - 5 }} years old. 
-    <a ng-show="p.test" href="" ng-click="hello(p.name, $index)">Say Hi</a>
+  <p ng-repeat="p in people" ng-click="viewMore(p)">
+    {{ $index + 1 }} - Hi, my name is {{ p.name }} and I am {{ p.age }} years old. 
   </p>
 </div>
